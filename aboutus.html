@@ -1,0 +1,331 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | Venketsh Traders</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Work+Sans:wght@400;500&amp;family=IBM+Plex+Sans:wght@500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=IBM+Plex+Sans:wght@100..900&amp;family=Work+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pressed-state:active {
+            transform: scale(0.98);
+            filter: brightness(0.9);
+        }
+        .zebra-row:nth-child(even) {
+            background-color: #F1F5F9;
+        }
+        .bronze-gradient {
+            background: linear-gradient(135deg, #714a23 0%, #8c6239 100%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "primary": "#714a23",
+                        "secondary-container": "#cdddfe",
+                        "on-tertiary-fixed": "#111c2c",
+                        "surface-container-high": "#e5e9eb",
+                        "on-tertiary-container": "#e4ecff",
+                        "surface-container-highest": "#e0e3e5",
+                        "inverse-primary": "#f1bc8c",
+                        "secondary": "#4f5f7b",
+                        "primary-fixed": "#ffdcbf",
+                        "surface-tint": "#7e562e",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "background": "#f7fafc",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#384762",
+                        "tertiary-fixed-dim": "#bcc7dd",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#f1bc8c",
+                        "on-primary-container": "#ffe8d7",
+                        "secondary-fixed": "#d6e3ff",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-container": "#606b7f",
+                        "surface": "#f7fafc",
+                        "on-secondary-container": "#52617d",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#ebeef0",
+                        "on-error": "#ffffff",
+                        "on-background": "#181c1e",
+                        "surface-container-low": "#f1f4f6",
+                        "primary-container": "#8c6239",
+                        "on-secondary-fixed": "#0a1c34",
+                        "on-primary-fixed-variant": "#633f19",
+                        "surface-bright": "#f7fafc",
+                        "tertiary": "#485366",
+                        "tertiary-fixed": "#d8e3fa",
+                        "surface-variant": "#e0e3e5",
+                        "on-surface-variant": "#50453b",
+                        "outline": "#82756a",
+                        "on-primary-fixed": "#2d1600",
+                        "secondary-fixed-dim": "#b7c7e7",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d7dadc",
+                        "outline-variant": "#d4c3b7",
+                        "on-surface": "#181c1e",
+                        "inverse-on-surface": "#eef1f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "max-width": "1280px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-md": ["Work Sans"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-lg": ["Work Sans"],
+                        "label-lg": ["IBM Plex Sans"],
+                        "label-sm": ["IBM Plex Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-inverse-surface border-b-2 border-outline-variant dark:border-outline shadow-sm dark:shadow-none full-width top-0 sticky z-50">
+<div class="flex justify-between items-center h-16 px-gutter max-w-max-width mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Venketsh Traders Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz_mXMuL0bZ1uly9CgbCi9If1Q58y7lXJMTi1h699HKsRA7k_iSQuiDdvloFGo7w2M8FR1LaX9ZmvQXCWDfjgNuxZVLBI5953IJOy2bdMbCRRE_uivqY-gseQUSX2GrvLZLd14cq1UBbqZyTiWHQ4alOQf9YnKIYQYYFJBzho2DnVxD5M_W_jrPAU4fC90Rh5MbgMlhla3n9jK5wWV2Yjdy-CZw2xvfSh_v9rTvvkvTwEh2qsXxd7wrzbqTk0poiHpUswOh7W-ILg">
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim">Venketsh Traders</span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Plumbing</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Hardware</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Irrigation</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Motors</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim font-bold text-label-lg font-label-lg" href="#">About Us</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-lg text-label-lg scale-95 active:opacity-80 transition-transform">
+                Contact Us
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[60vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A wide-angle, cinematic photograph of a clean, organized industrial warehouse with high ceilings. Stacks of high-quality copper pipes and large industrial water pumps are arranged systematically. Sunlight filters through high windows, creating a professional and reliable atmosphere. The color palette features metallic copper, deep navy shadows, and crisp white highlights, reflecting industrial precision and expertise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANHLXivYxDEMgPII0x7hsdwV87SMS_z9DV3CPl3uvn4hZGje6KPmpsB1Q1odIBLjihoneeex5SBHGS562nO2xoH4bBlAPCA1btYC-aWgUn_4CovUt--KlbZiLPGAdyjAJxXTdrZZL01OkXBtdnOT_Cb6Nv8DqKLBUmOr1tTO0ddWfsIG9r2HRfonEsuaaosBzpyuFSfeYpD15s86XkGMYaKJDOnC-UZv27u2PGBlori1RGB53RrTVBQXiahps_s3WTFsZ7r7_J1Co')"></div>
+<div class="absolute inset-0 bg-on-surface/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 max-w-max-width mx-auto px-gutter w-full">
+<div class="max-w-2xl border-l-4 border-primary pl-8 py-4">
+<h1 class="text-display-lg font-display-lg text-surface-container-lowest mb-4">Foundation of Quality, Legacy of Trust</h1>
+<p class="text-body-lg font-body-lg text-surface-container-low opacity-90">Serving the building blocks of our community since 1984 with premium plumbing, hardware, and irrigation solutions.</p>
+</div>
+</div>
+</section>
+<!-- Our Story / History -->
+<section class="py-margin-desktop bg-surface">
+<div class="max-w-max-width mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<span class="text-primary font-bold uppercase tracking-widest text-label-sm font-label-sm block mb-4">Our Journey</span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-6">Four Decades of Industrial Excellence</h2>
+<div class="space-y-6 text-on-surface-variant text-body-md font-body-md">
+<p>Venketsh Traders began as a modest hardware shop with a singular focus: providing reliable tools to local tradesmen. Over the years, we have evolved into a comprehensive hub for industrial and domestic supplies, specializing in complex irrigation systems and high-capacity electric motors.</p>
+<p>Our growth has been dictated by the needs of our community. When the local agriculture sector faced water scarcity challenges, we expanded our irrigation portfolio. When the construction boom required better plumbing standards, we partnered with the world's leading material manufacturers to bring durability to every site.</p>
+<div class="grid grid-cols-2 gap-8 pt-6">
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="block text-headline-md font-headline-md text-primary">1984</span>
+<span class="text-label-lg font-label-lg text-secondary">Established</span>
+</div>
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="block text-headline-md font-headline-md text-primary">15k+</span>
+<span class="text-label-lg font-label-lg text-secondary">Projects Served</span>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-5">
+<div class="relative">
+<div class="aspect-square w-full bg-cover bg-center rounded-xl shadow-xl border border-outline-variant" data-alt="A vintage-style black and white photograph of an early 1980s hardware store storefront, transitioned into a modern, high-tech industrial office interior. The image uses a split-screen effect to show the growth and transformation of the business. The lighting is sophisticated, with warm desk lamps in the modern section and nostalgic soft focus in the vintage section. Professional, clean, and grounded in heritage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBntFgNpXuu8qyz4cKo7SKo1Y6QuVHvG3xchhirnH14-kkUho0eVoCfC5rFRyX6yQOmnzjFQ-ME58c0y8ei1Wr_4vXX3U-3zNBgG9xX7oN2tElv-uXSpblglmqx_1sxY7dPSkskm4SwZ_z6oJKwybtCS81mWFOfznh2WHq9DRNnMugaXN4DW6HNaWuGIUtv_tDFCZlXUaYB7Q3yTleMBv0GljgHRrHqtKjCYbUiOPOeCd-IUHQe7V6mBAQsnEiZZLq0Ho0B8JXRuX8')"></div>
+<div class="absolute -bottom-6 -left-6 bg-primary p-8 rounded-lg shadow-2xl hidden lg:block">
+<span class="material-symbols-outlined text-surface text-4xl mb-2">verified</span>
+<p class="text-surface font-bold text-headline-sm">Certified Quality</p>
+<p class="text-primary-fixed-dim text-label-sm">ISO 9001:2015 Standards</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Values Bento -->
+<section class="py-margin-desktop bg-surface-container-low">
+<div class="max-w-max-width mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Built on Core Principles</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto mt-4">We don't just sell products; we provide the technical expertise and reliability that keeps our community moving forward.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Mission -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4">rocket_launch</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-4">Our Mission</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">To empower the plumbing and irrigation industry by providing high-grade materials, innovative technical solutions, and unparalleled logistical support to every contractor and homeowner we serve.</p>
+</div>
+<div class="mt-12 flex flex-wrap gap-4">
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm">Community Focused</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm">Quality Obsessed</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm">Innovation Led</span>
+</div>
+</div>
+<!-- Values: Integrity -->
+<div class="bg-primary p-8 rounded-xl flex flex-col text-on-primary">
+<span class="material-symbols-outlined text-4xl mb-4" data-weight="fill">handshake</span>
+<h3 class="text-headline-md font-headline-md mb-2">Integrity</h3>
+<p class="text-on-primary-container opacity-90">Honest pricing and genuine parts. We believe in building long-term relationships through transparency in every transaction.</p>
+</div>
+<!-- Values: Durability -->
+<div class="bg-surface-container-highest p-8 rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">construction</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Durability</h3>
+<p class="text-on-surface-variant">We only stock materials tested for the harshest industrial conditions, ensuring your projects stand the test of time.</p>
+</div>
+<!-- Values: Support -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant flex items-center gap-8">
+<div class="hidden sm:block">
+<div class="w-32 h-32 rounded-full bg-cover bg-center border-4 border-outline-variant" data-alt="A macro photograph focusing on the hands of an expert technician holding a technical blueprint next to a precision-engineered steel valve. The background is softly blurred showing an industrial workshop. The lighting is focused and professional, highlighting the texture of the metal and the clarity of the plans. Corporate modern style, emphasizing expertise and technical support." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDesbL07LkPuB-CaPFIHEDVhPScJKTbh1FWyUs5mvo9MwLXug8O4A-ii7JZNUg7yfMLbqOf6ZMGnYgDfSm_n3ADSnQlvr35O4odqpAaVPYCtr29-ZsQ54lygP8hbMj7UHsuSitEqdoVl_-FmVgRFgQ7iloY8KnksijRMSIQeAnZAUra-J3trubVF1tCaKS1KoYYy6C6ryKH5QSWJ2ect4Gmf3KPUZ3exagp-pNDVoDxfGUUZkSY276SBzxxDtzlxR-MaJ7L5stF6ng')"></div>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Expert Consultation</h3>
+<p class="text-on-surface-variant">Our team doesn't just manage inventory; we provide technical walkthroughs and troubleshooting for complex irrigation and motor installations.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specifications Table -->
+<section class="py-margin-desktop bg-surface">
+<div class="max-w-max-width mx-auto px-gutter">
+<div class="mb-8">
+<h2 class="text-headline-md font-headline-md text-on-surface">Standard Quality Benchmarks</h2>
+<p class="text-label-lg font-label-lg text-secondary">Materials we guarantee in every supply chain.</p>
+</div>
+<div class="overflow-x-auto border border-outline-variant rounded-lg shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead class="bg-secondary text-on-secondary">
+<tr>
+<th class="px-6 py-4 font-label-lg text-label-lg">Category</th>
+<th class="px-6 py-4 font-label-lg text-label-lg">Standard Materials</th>
+<th class="px-6 py-4 font-label-lg text-label-lg">Industry Certification</th>
+<th class="px-6 py-4 font-label-lg text-label-lg">Guarantee</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant">
+<tr class="zebra-row">
+<td class="px-6 py-4 font-bold text-on-surface">Plumbing</td>
+<td class="px-6 py-4">High-Grade Copper, CPVC, GI Fittings</td>
+<td class="px-6 py-4">BIS &amp; ASTM Standards</td>
+<td class="px-6 py-4"><span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold uppercase">Lifetime*</span></td>
+</tr>
+<tr class="zebra-row">
+<td class="px-6 py-4 font-bold text-on-surface">Irrigation</td>
+<td class="px-6 py-4">HDPE Pipes, Drip Emitters, Filtration Units</td>
+<td class="px-6 py-4">IS 14151 Standards</td>
+<td class="px-6 py-4"><span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold uppercase">5 Years</span></td>
+</tr>
+<tr class="zebra-row">
+<td class="px-6 py-4 font-bold text-on-surface">Motors</td>
+<td class="px-6 py-4">Copper Winding, IP55 Protection</td>
+<td class="px-6 py-4">BEE Star Rated</td>
+<td class="px-6 py-4"><span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold uppercase">2 Years</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-margin-desktop px-gutter">
+<div class="max-w-max-width mx-auto bg-inverse-surface rounded-3xl p-12 relative overflow-hidden">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[300px]" data-weight="fill">plumbing</span>
+</div>
+<div class="relative z-10 max-w-xl">
+<h2 class="text-display-lg font-display-lg text-inverse-on-surface mb-6">Ready to build something lasting?</h2>
+<p class="text-surface-variant text-body-lg mb-8">Visit our distribution center or consult with our experts for your next industrial project.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold text-label-lg hover:brightness-110 transition-all pressed-state">Get a Quote</button>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-bold text-label-lg hover:bg-primary hover:text-on-primary transition-all pressed-state">Find Store</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t-4 border-primary dark:border-primary-container full-width bottom-0">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 px-gutter max-w-max-width mx-auto">
+<!-- Brand & Info -->
+<div class="space-y-4">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-inverse-on-surface">Venketsh Traders</span>
+<p class="text-on-surface-variant dark:text-surface-variant text-body-md font-body-md">
+                    © 2024 Venketsh Traders. Industrial &amp; Domestic Hardware Experts.
+                </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined text-sm">face_nod</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div>
+<h4 class="text-on-surface font-bold mb-4 font-label-lg text-label-lg">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-surface-variant text-label-sm font-label-sm hover:text-primary transition-opacity opacity-90 hover:opacity-100" href="#">Plumbing Solutions</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant text-label-sm font-label-sm hover:text-primary transition-opacity opacity-90 hover:opacity-100" href="#">Hardware Supplies</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant text-label-sm font-label-sm hover:text-primary transition-opacity opacity-90 hover:opacity-100" href="#">Irrigation Systems</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant text-label-sm font-label-sm hover:text-primary transition-opacity opacity-90 hover:opacity-100" href="#">Electric Motors</a></li>
+</ul>
+</div>
+<!-- Contact & Address -->
+<div>
+<h4 class="text-on-surface font-bold mb-4 font-label-lg text-label-lg">Get in Touch</h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="text-on-surface-variant dark:text-surface-variant text-label-sm font-label-sm">123 Industrial Estate Road, Sector 4, Bangalore, Karnataka</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="text-on-surface-variant dark:text-surface-variant text-label-sm font-label-sm">+91 123-456-7890</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="text-on-surface-variant dark:text-surface-variant text-label-sm font-label-sm">contact@venketsh.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant py-4 px-gutter max-w-max-width mx-auto">
+<p class="text-label-sm font-label-sm text-center text-on-surface-variant opacity-60">
+                Registered Trademarks Apply. Professional installation recommended for all industrial motors.
+            </p>
+</div>
+</footer>
+</body></html>
