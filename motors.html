@@ -1,0 +1,442 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Electric Motors | Venketesh Traders</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Work+Sans:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#bcc7dd",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#2d1600",
+                        "outline": "#82756a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#cdddfe",
+                        "on-surface": "#181c1e",
+                        "on-secondary-container": "#52617d",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-low": "#f1f4f6",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#50453b",
+                        "tertiary-fixed": "#d8e3fa",
+                        "tertiary-container": "#606b7f",
+                        "inverse-primary": "#f1bc8c",
+                        "on-tertiary-fixed": "#111c2c",
+                        "on-background": "#181c1e",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "secondary-fixed-dim": "#b7c7e7",
+                        "inverse-on-surface": "#eef1f3",
+                        "primary": "#714a23",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d7dadc",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#d4c3b7",
+                        "background": "#f7fafc",
+                        "surface-container-high": "#e5e9eb",
+                        "secondary-fixed": "#d6e3ff",
+                        "primary-fixed-dim": "#f1bc8c",
+                        "on-tertiary-container": "#e4ecff",
+                        "tertiary": "#485366",
+                        "on-primary-container": "#ffe8d7",
+                        "surface-bright": "#f7fafc",
+                        "surface": "#f7fafc",
+                        "surface-container": "#ebeef0",
+                        "primary-fixed": "#ffdcbf",
+                        "secondary": "#4f5f7b",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary-fixed-variant": "#384762",
+                        "on-secondary-fixed": "#0a1c34",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#8c6239",
+                        "on-primary-fixed-variant": "#633f19",
+                        "surface-tint": "#7e562e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "max-width": "1280px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-lg": ["Work Sans"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "label-sm": ["IBM Plex Sans"],
+                        "body-md": ["Work Sans"],
+                        "label-lg": ["IBM Plex Sans"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+        }
+        .zebra-stripe tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 border-b-2 border-outline-variant transition-colors bg-surface"><div class="flex items-center gap-8"><span class="text-headline-md font-headline-md font-bold text-primary dark:text-inverse-primary">Venketesh Traders</span><nav class="hidden md:flex items-center gap-6"><a class="text-secondary dark:text-secondary-fixed-dim font-medium font-label-lg text-label-lg hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Home</a><a class="text-secondary dark:text-secondary-fixed-dim font-medium font-label-lg text-label-lg hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Plumbing</a><a class="text-secondary dark:text-secondary-fixed-dim font-medium font-label-lg text-label-lg hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Hardware</a><a class="text-secondary dark:text-secondary-fixed-dim font-medium font-label-lg text-label-lg hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Irrigation</a><a class="text-primary dark:text-inverse-primary border-b-2 border-primary pb-1 font-bold font-label-lg text-label-lg transition-colors duration-200" href="#">Motors</a><a class="text-secondary dark:text-secondary-fixed-dim font-medium font-label-lg text-label-lg hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">About Us</a></nav></div><div class="flex items-center gap-4"><div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded"><span class="material-symbols-outlined text-secondary text-base">search</span><input class="bg-transparent border-none focus:ring-0 text-label-lg font-label-lg ml-2" placeholder="Search SKU..." type="text"></div><button class="bg-primary text-on-primary px-6 py-2 font-label-lg text-label-lg hover:opacity-80 transition-all">Find Dealer</button></div></header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[85vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWoygv6LGRZ4X5gCbm7mlbWcjefGaolNAvNlVojot_QHwEBlkHBV4QDRiJCbfetrkdyaN5RQE1lwAkGO542zLWQBTbM1HWx6rv-1wQ4TFkmRJ7TaBZl3YaYww2Exz7Cpr2KXAhkUto1RNjE8FedQp9L454hTDGcWOMFpPDDWtycvsiLfFDJg-Boiyo4qSRwJsY2b5iqpa_ZgYyaIMIf4zZaLWl_hOK8_faCFNirJUP76yG1Z-OQ-6KaH_v9qcsao7Ge8P3A7rQ_cY">
+</div>
+<div class="relative z-10 max-w-screen-xl mx-auto px-margin-desktop text-white">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">
+                        Industrial Motors: The Power Behind Maharashtra's Progress
+                    </h1>
+<p class="font-body-lg text-body-lg mb-8 text-on-primary-container">
+                        Since 1984, Venketesh Traders has supplied the region with high-efficiency electric motors for irrigation, industrial fabrication, and domestic utility.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-lg hover:bg-primary-container transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">download</span>
+                            Download Motor Catalog
+                        </button>
+<button class="border-2 border-white text-white px-8 py-4 rounded-lg font-label-lg hover:bg-white/10 transition-all">
+                            Get a Custom Quote
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Showcase -->
+<section class="py-24 max-w-screen-xl mx-auto px-margin-desktop">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-2">Engineered Performance</h2>
+<div class="h-1 w-24 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- 1 HP Motor -->
+<div class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:shadow-xl transition-all duration-300">
+<div class="aspect-square mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdcUzz30NeOsUnPaxOpmUdCJAccwBqlSdkmZhTVgcQY4VUA2s5ygJ7EmnrjpADOMfC0A5ygrvCnBVAxQNnLiUnmU5sCE5LCGAKs7oN7-TSv_fWDaT-TDDhrcHnhhLZC1m2GVfg9jLzQiQUYUn43WMMpdoOr6Xtn2f819ld6VZaWTMCUY3zv5Bg5qcMK2Kvnc_-SytOYwT4fsaDBV1K_5VW-HqqKWzltn31Oh31JdI3Jf2Ksewc_aU5COVTfRd5VETGfIgpUGqJW10">
+</div>
+<div class="space-y-4">
+<span class="inline-block px-3 py-1 bg-surface-container-highest text-secondary font-label-lg rounded">AGRICULTURAL &amp; DOMESTIC</span>
+<h3 class="font-headline-md text-headline-md text-primary">1 HP Standard Efficiency Motor</h3>
+<div class="grid grid-cols-2 gap-4 border-y border-outline-variant py-4">
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Voltage</p>
+<p class="font-label-lg text-secondary">230V Single-phase</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Speed</p>
+<p class="font-label-lg text-secondary">1440 RPM</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Protection</p>
+<p class="font-label-lg text-secondary">IP44 Rated</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Efficiency</p>
+<p class="font-label-lg text-secondary">High Standard</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">Field-proven reliability for daily Maharashtrian farming conditions. Engineered with rural ruggedness for small pumps and domestic utility.</p>
+<button class="w-full py-4 border-2 border-primary text-primary font-label-lg rounded-lg hover:bg-primary hover:text-on-primary transition-all">View Specifications</button>
+</div>
+</div>
+<!-- 2 HP Motor -->
+<div class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:shadow-xl transition-all duration-300">
+<div class="aspect-square mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANVDGtNaM5ofKzP1oLpsSe0vO8us7J6t9SRb2LPtlGFTgjxxWv5cbe4IV8kiJvMNWWTJdFIwetgXktbwQdg7NEaJRvqSCUcEYzpznzKA5wHODvVEYPuOMYDRMxtlgVwxfFAnSyntDSFeW9KqJAvcd0BJWiYcfzLfozA5LsHXXCoA5pBMX3aihWg6BAuFkLjPKzIO5l-0nUi3bZUHCkwpwHvqArpZUEbbnKuTkQbqMLP057CVA3drn470Okb9HSLmaKdBDx0Jh54uc">
+</div>
+<div class="space-y-4">
+<span class="inline-block px-3 py-1 bg-primary text-on-primary font-label-lg rounded">INDUSTRIAL GRADE</span>
+<h3 class="font-headline-md text-headline-md text-primary">2 HP Heavy-Duty Industrial Motor</h3>
+<div class="grid grid-cols-2 gap-4 border-y border-outline-variant py-4">
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Voltage</p>
+<p class="font-label-lg text-secondary">415V Three-phase</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Speed</p>
+<p class="font-label-lg text-secondary">2880 RPM</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Protection</p>
+<p class="font-label-lg text-secondary">IP55 (Dust/Water)</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Casing</p>
+<p class="font-label-lg text-secondary">Cast Iron Shell</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">A field-proven powerhouse designed for the toughest irrigation cycles. Delivers unmatched rural ruggedness for demanding industrial and farm machinery.</p>
+<button class="w-full py-4 bg-primary text-on-primary font-label-lg rounded-lg hover:opacity-90 active:scale-[0.98] transition-all">Request Bulk Pricing</button>
+</div>
+</div>
+</div>
+</section><section class="py-24 max-w-screen-xl mx-auto px-margin-desktop bg-surface-container-low">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-2">Jain Regional Product Line</h2>
+<div class="h-1 w-24 bg-primary-container rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+<!-- Jain High-Efficiency Agricultural Motor -->
+<div class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:shadow-xl transition-all duration-300">
+<div class="aspect-square mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Jain High-Efficiency Agricultural Motor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdcUzz30NeOsUnPaxOpmUdCJAccwBqlSdkmZhTVgcQY4VUA2s5ygJ7EmnrjpADOMfC0A5ygrvCnBVAxQNnLiUnmU5sCE5LCGAKs7oN7-TSv_fWDaT-TDDhrcHnhhLZC1m2GVfg9jLzQiQUYUn43WMMpdoOr6Xtn2f819ld6VZaWTMCUY3zv5Bg5qcMK2Kvnc_-SytOYwT4fsaDBV1K_5VW-HqqKWzltn31Oh31JdI3Jf2Ksewc_aU5COVTfRd5VETGfIgpUGqJW10">
+</div>
+<div class="space-y-4">
+<span class="inline-block px-3 py-1 bg-primary-container text-on-primary-container font-label-lg rounded">AGRICULTURAL SPECIALIST</span>
+<h3 class="font-headline-md text-headline-md text-primary">Jain High-Efficiency Agricultural Motor</h3>
+<div class="grid grid-cols-2 gap-4 border-y border-outline-variant py-4">
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Type</p>
+<p class="font-label-lg text-secondary">AC Induction</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Power Range</p>
+<p class="font-label-lg text-secondary">3.0 HP - 5.0 HP</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Housing</p>
+<p class="font-label-lg text-secondary">Blue/White Robust</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Application</p>
+<p class="font-label-lg text-secondary">Borewell Irrigation</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">Field-proven reliability for daily Maharashtrian farming conditions. Engineered with rural ruggedness for small pumps and domestic utility.</p>
+<button class="w-full py-4 border-2 border-primary-container text-primary-container font-label-lg rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all">Request Technical Sheet</button>
+</div>
+</div>
+<!-- Jain Solar-Powered Irrigation Pump -->
+<div class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:shadow-xl transition-all duration-300">
+<div class="aspect-square mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Jain Solar-Powered Irrigation Pump" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANVDGtNaM5ofKzP1oLpsSe0vO8us7J6t9SRb2LPtlGFTgjxxWv5cbe4IV8kiJvMNWWTJdFIwetgXktbwQdg7NEaJRvqSCUcEYzpznzKA5wHODvVEYPuOMYDRMxtlgVwxfFAnSyntDSFeW9KqJAvcd0BJWiYcfzLfozA5LsHXXCoA5pBMX3aihWg6BAuFkLjPKzIO5l-0nUi3bZUHCkwpwHvqArpZUEbbnKuTkQbqMLP057CVA3drn470Okb9HSLmaKdBDx0Jh54uc">
+</div>
+<div class="space-y-4">
+<span class="inline-block px-3 py-1 bg-primary text-on-primary font-label-lg rounded">RENEWABLE ENERGY</span>
+<h3 class="font-headline-md text-headline-md text-primary">Jain Solar-Powered Irrigation Pump</h3>
+<div class="grid grid-cols-2 gap-4 border-y border-outline-variant py-4">
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Motor Type</p>
+<p class="font-label-lg text-secondary">DC Solar Motor</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Power</p>
+<p class="font-label-lg text-secondary">2.0 HP</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Operation</p>
+<p class="font-label-lg text-secondary">Zero-Fuel</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Torque</p>
+<p class="font-label-lg text-secondary">High Starting</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">A field-proven powerhouse designed for the toughest irrigation cycles. Delivers unmatched rural ruggedness for demanding industrial and farm machinery.</p>
+<button class="w-full py-4 bg-primary text-on-primary font-label-lg rounded-lg hover:opacity-90 active:scale-[0.98] transition-all">Inquire for Subsidy</button>
+</div>
+</div>
+<div class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1">
+<div class="aspect-square mb-8 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Vertical Submersible Borewell Motor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBseDXe48m9CuFemOUZfVS8-TOK8sZ_db9T6EIpeQNdLNA_KPtrUCyPJ5dfbjf-HhtJ0lGbLoHBhAGSr8whCqKTtUF4Pkj0gTEr5IEbGIkPK36Evef5Q4MMaIIKohf8x8eUtPTuNxOinpIwqjrMXn-hL21uCwDLdWF7Vcsd7-L8tdCSrraCq2Qv3lPWtXlqTMRV_ZnWHYy9R_rfr6U_5AQewEYhDXJnkUBSh3l5-h6pUJ27U3pF16k9bK3IILth165HmT1cxoJfMag">
+</div>
+<div class="space-y-4">
+<span class="inline-block px-3 py-1 bg-primary-container text-on-primary-container font-label-lg rounded">DEEP-WELL SOLUTIONS</span>
+<h3 class="font-headline-md text-headline-md text-primary">Vertical Submersible Borewell Motor</h3>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider font-bold">High-Performance Deep-Well Extraction</p>
+<div class="grid grid-cols-2 gap-4 border-y border-outline-variant py-4">
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Material</p>
+<p class="font-label-lg text-secondary">Stainless Steel</p>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Power Range</p>
+<p class="font-label-lg text-secondary">3.0 HP - 7.5 HP</p>
+</div>
+<div class="col-span-2">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Application</p>
+<p class="font-label-lg text-secondary">Deep borewells, rural water supply, high-head irrigation</p>
+</div>
+</div>
+<button class="w-full py-4 border-2 border-primary-container text-primary-container font-label-lg rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all">View Technical Sheet</button>
+</div>
+</div></div>
+</section>
+<!-- Technical Comparison -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-xl mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-secondary">Technical Comparison</h2>
+<p class="font-body-lg text-on-surface-variant">Analyze the technical metrics to match your specific operational needs.</p>
+</div>
+<div class="overflow-x-auto rounded-lg border border-outline-variant shadow-sm bg-white">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-secondary text-on-secondary">
+<th class="p-6 font-label-lg">Model Series</th>
+<th class="p-6 font-label-lg">Power (HP)</th>
+<th class="p-6 font-label-lg">Voltage Supply</th>
+<th class="p-6 font-label-lg">RPM (Sync)</th>
+<th class="p-6 font-label-lg">Recommended Application</th>
+</tr>
+</thead>
+<tbody class="zebra-stripe font-label-lg text-on-surface">
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-bold">VT-ECO-1</td>
+<td class="p-6">1.0 HP</td>
+<td class="p-6">230V / 1 Ph</td>
+<td class="p-6">1440</td>
+<td class="p-6 text-on-surface-variant">Domestic Water Pumps, Small Tools</td>
+</tr>
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-bold">VT-IND-1.5</td>
+<td class="p-6">1.5 HP</td>
+<td class="p-6">230V / 1 Ph</td>
+<td class="p-6">1440</td>
+<td class="p-6 text-on-surface-variant">Farm Irrigation (Light), Pressure Pumps</td>
+</tr>
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-bold">VT-HEAVY-2</td>
+<td class="p-6">2.0 HP</td>
+<td class="p-6">415V / 3 Ph</td>
+<td class="p-6">2880</td>
+<td class="p-6 text-on-surface-variant">Industrial Mixers, High-Flow Irrigation</td>
+</tr>
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-bold">VT-HEAVY-5</td>
+<td class="p-6">5.0 HP</td>
+<td class="p-6">415V / 3 Ph</td>
+<td class="p-6">2880</td>
+<td class="p-6 text-on-surface-variant">Crushers, Large Industrial Fabrication</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Selection Guide Section -->
+<section class="py-24 max-w-screen-xl mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-12">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Choosing the Right Motor</h2>
+<p class="font-body-md text-on-surface-variant">A specialized 3-step guide to ensure your equipment lasts for decades.</p>
+</div>
+<div class="hidden lg:block h-px flex-1 mx-12 bg-outline-variant"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-white p-8 border-b-4 border-primary shadow-sm hover:-translate-y-2 transition-transform duration-300">
+<div class="w-12 h-12 bg-surface-container-highest rounded flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">weight</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-3">01. Load Requirements</h4>
+<p class="font-body-md text-on-surface-variant">Determine the total torque needed to start and run your application. Overloading leads to premature failure.</p>
+</div>
+<div class="bg-white p-8 border-b-4 border-secondary shadow-sm hover:-translate-y-2 transition-transform duration-300">
+<div class="w-12 h-12 bg-surface-container-highest rounded flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-3">02. Power Supply</h4>
+<p class="font-body-md text-on-surface-variant">Match the motor with your site's voltage. Single-phase is common for homes; 3-phase is standard for factories.</p>
+</div>
+<div class="bg-white p-8 border-b-4 border-primary-container shadow-sm hover:-translate-y-2 transition-transform duration-300">
+<div class="w-12 h-12 bg-surface-container-highest rounded flex items-center justify-center mb-6 text-primary-container">
+<span class="material-symbols-outlined text-3xl">history</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-3">03. Duty Cycle</h4>
+<p class="font-body-md text-on-surface-variant">Will the motor run continuously (S1 duty) or intermittently? Select S1-rated motors for constant 24/7 operations.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-secondary text-on-secondary">
+<div class="max-w-screen-xl mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-2">Need a custom industrial solution?</h2>
+<p class="font-body-lg opacity-90">Our engineers are available for on-site consultation across the Maharashtra region.</p>
+</div>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-lg font-headline-md hover:scale-105 active:scale-95 transition-all shadow-lg">
+                    Contact Engineering Team
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter bg-secondary border-t border-outline">
+<div class="flex flex-col gap-2">
+<div class="font-headline-md text-headline-md text-on-secondary">Venketesh Traders</div>
+<p class="font-label-sm text-label-sm text-on-secondary/80">© 2024 Venketesh Traders. Industrial Integrity Certified.</p>
+</div>
+<div class="flex gap-gutter">
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary transition-all hover:underline" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary transition-all hover:underline" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary transition-all hover:underline" href="#">Technical Specs</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary transition-all hover:underline" href="#">SKU Index</a>
+</div>
+</footer>
+<script>
+        // Micro-interaction for scroll effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.remove('h-20');
+                header.classList.add('h-16');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('h-20');
+                header.classList.remove('h-16');
+            }
+        });
+    </script>
+
+
+
+
+</body></html>
