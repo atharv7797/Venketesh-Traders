@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Irrigation Solutions | Venketesh Traders</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Work+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#ffe8d7",
+                    "on-tertiary-fixed": "#111c2c",
+                    "inverse-primary": "#f1bc8c",
+                    "surface-dim": "#d7dadc",
+                    "on-tertiary-container": "#e4ecff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "on-secondary-container": "#52617d",
+                    "secondary-container": "#cdddfe",
+                    "secondary": "#4f5f7b",
+                    "outline": "#82756a",
+                    "surface-bright": "#f7fafc",
+                    "outline-variant": "#d4c3b7",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e5e9eb",
+                    "inverse-on-surface": "#eef1f3",
+                    "primary": "#714a23",
+                    "surface-variant": "#e0e3e5",
+                    "surface-container": "#ebeef0",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#485366",
+                    "on-surface": "#181c1e",
+                    "error": "#ba1a1a",
+                    "background": "#f7fafc",
+                    "on-surface-variant": "#50453b",
+                    "tertiary-fixed-dim": "#bcc7dd",
+                    "tertiary-container": "#606b7f",
+                    "primary-fixed-dim": "#f1bc8c",
+                    "secondary-fixed-dim": "#b7c7e7",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-error": "#ffffff",
+                    "on-background": "#181c1e",
+                    "surface-container-low": "#f1f4f6",
+                    "surface-tint": "#7e562e",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2d3133",
+                    "surface": "#f7fafc",
+                    "on-primary-fixed-variant": "#633f19",
+                    "on-secondary-fixed-variant": "#384762",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#0a1c34",
+                    "on-primary-fixed": "#2d1600",
+                    "secondary-fixed": "#d6e3ff",
+                    "tertiary-fixed": "#d8e3fa",
+                    "primary-container": "#8c6239",
+                    "primary-fixed": "#ffdcbf",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "max-width": "1280px"
+            },
+            "fontFamily": {
+                    "label-sm": ["IBM Plex Sans"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "body-lg": ["Work Sans"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "label-lg": ["IBM Plex Sans"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-md": ["Work Sans"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        @keyframes kenburns {
+            0% { transform: scale(1) translate(0, 0); }
+            50% { transform: scale(1.1) translate(-2%, -1%); }
+            100% { transform: scale(1) translate(0, 0); }
+        }
+        .ken-burns-container {
+            overflow: hidden;
+        }
+        .ken-burns-bg {
+            animation: kenburns 30s ease-in-out infinite;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pressed-effect:active {
+            transform: scale(0.98);
+            transition: transform 0.1s ease;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 flex justify-between items-center px-margin-desktop py-4 w-full max-w-max-width mx-auto bg-surface dark:bg-inverse-surface border-b-2 border-outline-variant dark:border-outline">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-inverse-primary">
+            Industrial Integrity
+        </div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Plumbing</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Hardware</a>
+<a class="text-primary dark:text-inverse-primary border-b-2 border-primary pb-1 font-bold" href="#">Irrigation</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Motors</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">About Us</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 font-label-lg rounded-DEFAULT hover:opacity-90 transition-all pressed-effect">
+            Find Dealer
+        </button>
+</header>
+<main>
+<!-- Hero Section with Ken Burns Effect -->
+<section class="relative h-[85vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0 ken-burns-container">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<div class="ken-burns-bg w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLsNLX4bdWmEnZVBz8CL_2qYlicwhZw2EVek3LZrc-wrMTwiDuCSc1rTQxV-hHZf589kOwcu2P35jsr-5mIkvWwdzJwZlpkS47-l1JLzCKWCF-LaooO6l985SVRHOXZGs7vpxHMPxCJffnXCaHGNLoXxMfnO9WOJBjPh9n1PyqXJuYLZe0ECfKozmetkNLMsltxXkskptRKnytL5g3X0EY4dLVR2kA94xjbnLp4jTmiO7pTugZNsWN7L4rY')"></div>
+</div>
+<div class="relative z-20 px-margin-desktop w-full max-w-max-width mx-auto">
+<div class="max-w-2xl bg-surface/10 backdrop-blur-md p-10 border-l-4 border-primary">
+<span class="text-primary-fixed-dim font-label-lg tracking-widest uppercase mb-4 block">Established 1984</span>
+<h1 class="font-display-lg text-display-lg text-white mb-6">Precision Irrigation for Maharashtra's Farms</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 leading-relaxed">
+                        Equipping the region with sustainable water management solutions that optimize yields while conserving our most precious resource. Professional-grade systems for the modern grower.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-lg rounded-DEFAULT flex items-center gap-2 hover:bg-primary-container transition-colors pressed-effect">
+<span class="material-symbols-outlined">description</span> Download Irrigation Catalog
+                        </button>
+<button class="border-2 border-white text-white px-8 py-4 font-label-lg rounded-DEFAULT hover:bg-white hover:text-primary transition-all pressed-effect">
+                            View Case Studies
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust & Partnership Row -->
+<section class="bg-surface-container-low py-12 border-b border-outline-variant">
+<div class="px-margin-desktop max-w-max-width mx-auto flex flex-col md:flex-row items-center justify-between gap-gutter opacity-70">
+<p class="font-label-lg text-secondary uppercase tracking-widest">Regional Trust Partners</p>
+<div class="flex flex-wrap justify-center items-center gap-12 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="font-headline-md text-primary/80 font-bold">JAIN IRRIGATION</div>
+<div class="font-headline-md text-primary/80 font-bold">NETAFIM</div>
+<div class="font-headline-md text-primary/80 font-bold">FINOLEX AGRI</div>
+<div class="font-headline-md text-primary/80 font-bold">VENKETESH ELITE</div>
+</div>
+</div>
+</section>
+<!-- Product Introduction Text -->
+<section class="pt-24 px-margin-desktop max-w-max-width mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Engineered Agricultural Solutions</h2>
+<div class="w-24 h-1 bg-primary mb-6"></div>
+<p class="font-body-lg text-body-lg text-secondary max-w-3xl">Comprehensive hardware and plumbing infrastructure designed specifically for the heavy-duty demands of Maharashtra's diverse agricultural landscape.</p>
+</div>
+</section>
+<!-- Strategic Advantages Section -->
+<section class="py-20 px-margin-desktop max-w-max-width mx-auto bg-surface-container-lowest">
+<div class="mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface text-center">The Precision Edge: Strategic Advantages</h2>
+<div class="w-16 h-1 bg-primary-container mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Point 1 -->
+<div class="p-8 border border-outline-variant bg-white flex flex-col items-center text-center group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-primary-container/10 flex items-center justify-center rounded-full mb-6 text-primary-container">
+<span class="material-symbols-outlined text-4xl">water_drop</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Water Conservation</h3>
+<p class="font-body-md text-secondary">Cut water usage by up to 50% with direct root-zone delivery.</p>
+</div>
+<!-- Point 2 -->
+<div class="p-8 border border-outline-variant bg-white flex flex-col items-center text-center group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-primary-container/10 flex items-center justify-center rounded-full mb-6 text-primary-container">
+<span class="material-symbols-outlined text-4xl">eco</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Superior Yield Quality</h3>
+<p class="font-body-md text-secondary">Achieve uniform growth and higher-grade harvests through moisture consistency.</p>
+</div>
+<!-- Point 3 -->
+<div class="p-8 border border-outline-variant bg-white flex flex-col items-center text-center group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-primary-container/10 flex items-center justify-center rounded-full mb-6 text-primary-container">
+<span class="material-symbols-outlined text-4xl">payments</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Optimized Input Costs</h3>
+<p class="font-body-md text-secondary">Minimize fertilizer runoff and labor by suppressing weed growth.</p>
+</div>
+<!-- Point 4 -->
+<div class="p-8 border border-outline-variant bg-white flex flex-col items-center text-center group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-primary-container/10 flex items-center justify-center rounded-full mb-6 text-primary-container">
+<span class="material-symbols-outlined text-4xl">landscape</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Soil Longevity</h3>
+<p class="font-body-md text-secondary">Protect Maharashtra's rich soil from erosion and nutrient leaching.</p>
+</div>
+<!-- Point 5 -->
+<div class="p-8 border border-outline-variant bg-white flex flex-col items-center text-center group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-primary-container/10 flex items-center justify-center rounded-full mb-6 text-primary-container">
+<span class="material-symbols-outlined text-4xl">science</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Precision Fertigation</h3>
+<p class="font-body-md text-secondary">Combine nutrients with water for targeted, high-absorption feeding.</p>
+</div>
+<!-- Point 6 -->
+<div class="p-8 border border-outline-variant bg-white flex flex-col items-center text-center group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-primary-container/10 flex items-center justify-center rounded-full mb-6 text-primary-container">
+<span class="material-symbols-outlined text-4xl">bolt</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Energy Efficiency</h3>
+<p class="font-body-md text-secondary">Reduce pumping costs through low-pressure system requirements.</p>
+</div>
+</div>
+</section>
+<!-- Product Categories: Bento Style -->
+<section class="py-24 px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Drip Irrigation (Large Focus) -->
+<div class="md:col-span-8 group overflow-hidden border border-outline-variant bg-white flex flex-col md:flex-row">
+<div class="md:w-1/2 overflow-hidden h-80 md:h-auto relative">
+<img alt="Professional drip irrigation components" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLutFWVoEqeoEmOIRreVh4bxv8DX3ovlQbgSMDy4EZ4g2TidF3DxmjJv4IuOuNarKGXVpWOKbYX-ZB8mLNRg42QKB_h504_CnIDPRnMf1W4-wBL_pEIOhbgCopEfFGIPcit3EHhWG6Ne_3phFdBq2YnE2ULtLQpVS1w5V2ecPiiGKsN6AmFq7_9FASLeSrDC7cLhbSquppMYnNXLPneKcA7mHWScGKCUQPHOQ2FiLjobDu24lnZNfSP60Is"/>
+</div>
+<div class="md:w-1/2 p-8 flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Drip Irrigation</h3>
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-label-sm">In Stock</span>
+</div>
+<p class="font-body-md text-secondary mb-6">High-precision delivery systems for orchards, row crops, and greenhouses. Minimize evaporation and maximize root uptake.</p>
+<div class="space-y-3 mt-auto">
+<div class="flex items-center justify-between border-b border-surface-variant pb-2">
+<span class="font-label-lg text-primary">Drippers</span>
+<span class="font-body-md">2LPH - 8LPH PC</span>
+</div>
+<div class="flex items-center justify-between border-b border-surface-variant pb-2">
+<span class="font-label-lg text-primary">Laterals</span>
+<span class="font-body-md">12mm, 16mm, 20mm PE</span>
+</div>
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-lg text-primary">Emitters</span>
+<span class="font-body-md">Inline &amp; Online</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Technical Specs -->
+<div class="md:col-span-4 bg-on-background p-8 border border-outline text-white">
+<h3 class="font-headline-md text-headline-md mb-6">Technical Performance</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-label-sm border-collapse">
+<thead>
+<tr class="border-b border-outline">
+<th class="py-3 uppercase tracking-wider text-secondary-fixed-dim">Parameter</th>
+<th class="py-3 uppercase tracking-wider text-secondary-fixed-dim text-right">Standard</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/10">
+<tr>
+<td class="py-4">Max Pressure</td>
+<td class="py-4 text-right">4.0 kg/cm²</td>
+</tr>
+<tr>
+<td class="py-4">UV Resistance</td>
+<td class="py-4 text-right">ISO 877-2</td>
+</tr>
+<tr>
+<td class="py-4">Service Life</td>
+<td class="py-4 text-right">10+ Years</td>
+</tr>
+<tr>
+<td class="py-4">Material</td>
+<td class="py-4 text-right">Virgin HDPE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Filtration Systems -->
+<div class="md:col-span-6 group border border-outline-variant bg-white flex flex-col">
+<div class="h-64 overflow-hidden relative">
+<img alt="Agricultural filtration system" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLtMn_6yLeBnGeHqBx9gousfoSbBS9sQRTnir6WRB3N3t9rMAVHIf2GGe-jB-NNVVJzRcfAwW2dDY3SX-M1BSgi9oQfOauFacAp_b7nsNOjH4Bf7mmQibb9XHSHS-HzKPMun72VaUsNZVOjLB1GfwyPEhs2ICHwupJ8xQTjSy27PAbtlIqMNqawUSPnBLijbg4m-0M5pXWkY7vbyvjmd6bt0XMWElmxK_SaC0xg1nmgX0pvjb6pmATzFHg"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Filtration Systems</h3>
+<p class="font-body-md text-secondary mb-8">Maintain system longevity with professional-grade sediment and particulate removal. Essential for borewell and canal water sources.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-low border-b-2 border-primary">
+<p class="font-label-sm text-secondary uppercase">Sand Filters</p>
+<p class="font-headline-md text-primary">Heavy Duty</p>
+</div>
+<div class="p-4 bg-surface-container-low border-b-2 border-primary">
+<p class="font-label-sm text-secondary uppercase">Disk Filters</p>
+<p class="font-headline-md text-primary">Y-Type</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Automation & Control -->
+<div class="md:col-span-6 bg-surface-container flex flex-col p-8 border border-outline-variant relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Automation &amp; Control</h3>
+<p class="font-body-md text-secondary mb-8">Smart scheduling for modern farming. Reduce labor costs and ensure exact timing for moisture management.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="bg-primary text-white p-2 rounded-lg">
+<span class="material-symbols-outlined">timer</span>
+</div>
+<div>
+<h4 class="font-label-lg text-on-surface">Programmable Timers</h4>
+<p class="font-label-sm text-secondary">Battery and AC-powered options with multi-zone logic.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary text-white p-2 rounded-lg">
+<span class="material-symbols-outlined">settings_input_component</span>
+</div>
+<div>
+<h4 class="font-label-lg text-on-surface">Solenoid Valves</h4>
+<p class="font-label-sm text-secondary">High-flow, low-wattage valves designed for outdoor reliability.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary text-white p-2 rounded-lg">
+<span class="material-symbols-outlined">sensors</span>
+</div>
+<div>
+<h4 class="font-label-lg text-on-surface">Soil Moisture Sensors</h4>
+<p class="font-label-sm text-secondary">Real-time data integration for reactive irrigation cycles.</p>
+</div>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-primary/5 text-[240px] pointer-events-none">automation</span>
+</div>
+</div>
+</section>
+<!-- Agricultural Consultation CTA -->
+<section class="py-24 bg-primary-container relative">
+<div class="px-margin-desktop max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+<div class="text-white">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-6 leading-tight">Ready to Optimize Your Crop Yield?</h2>
+<p class="font-body-lg text-body-lg mb-8 opacity-90">Our technical specialists provide on-site evaluation and system design for farms across the region. Since 1984, Venketesh Traders has been the backbone of local agriculture.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-lg">Full System Design &amp; Layout</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-lg">Regional After-Sales Support</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-lg">Government Subsidy Assistance</span>
+</li>
+</ul>
+</div>
+<div class="bg-white p-10 rounded-lg shadow-xl">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Request Consultation</h3>
+<form class="space-y-4">
+<div>
+<label class="block font-label-sm text-secondary mb-1">Contact Name</label>
+<input class="w-full bg-surface-container-low border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 font-body-md p-3" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-secondary mb-1">Phone Number</label>
+<input class="w-full bg-surface-container-low border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 font-body-md p-3" placeholder="+91" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-secondary mb-1">Farm Location (Taluka/District)</label>
+<input class="w-full bg-surface-container-low border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 font-body-md p-3" placeholder="e.g. Karad, Satara" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-secondary mb-1">Crop Type</label>
+<select class="w-full bg-surface-container-low border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 font-body-md p-3">
+<option>Sugarcane</option>
+<option>Grapes</option>
+<option>Pomegranate</option>
+<option>Vegetables</option>
+<option>Other</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 mt-6 font-label-lg rounded-DEFAULT hover:opacity-95 transition-all pressed-effect" type="submit">
+                            Submit Inquiry
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-on-background dark:bg-inverse-surface">
+<div class="md:col-span-1">
+<div class="text-headline-lg font-headline-lg text-primary-fixed mb-4">Industrial Integrity</div>
+<p class="text-surface-container-highest font-body-md mb-6 opacity-70">Heritage in every drop, integrity in every connection.</p>
+</div>
+<div>
+<h4 class="font-label-lg text-primary-fixed mb-6 uppercase tracking-widest">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-container-highest dark:text-surface-variant font-medium hover:text-primary-fixed-dim underline transition-all" href="#">Regional Dealers</a></li>
+<li><a class="text-surface-container-highest dark:text-surface-variant font-medium hover:text-primary-fixed-dim underline transition-all" href="#">Technical Specs</a></li>
+<li><a class="text-surface-container-highest dark:text-surface-variant font-medium hover:text-primary-fixed-dim underline transition-all" href="#">Safety Data</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg text-primary-fixed mb-6 uppercase tracking-widest">Support</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-container-highest dark:text-surface-variant font-medium hover:text-primary-fixed-dim underline transition-all" href="#">Contact Support</a></li>
+<li><a class="text-surface-container-highest dark:text-surface-variant font-medium hover:text-primary-fixed-dim underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-surface-container-highest dark:text-surface-variant font-medium hover:text-primary-fixed-dim underline transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-primary-fixed mb-6 uppercase tracking-widest">Contact Us</h4>
+<p class="text-surface-container-highest mb-2 font-body-md">Maharashtra Industrial Zone,</p>
+<p class="text-surface-container-highest mb-4 font-body-md">Satara, MH - 415001</p>
+<p class="text-primary-fixed font-bold">T: +91 2162 000 000</p>
+</div>
+<div class="md:col-span-4 border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-label-sm font-label-sm text-surface-container-highest opacity-60">© 2024 Industrial Integrity Heritage Brand. All rights reserved. Professional Grade Hardware &amp; Plumbing.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer hover:scale-110 transition-transform">face_nod</span>
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer hover:scale-110 transition-transform">share</span>
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer hover:scale-110 transition-transform">contact_support</span>
+</div>
+</div>
+</footer>
+<script>
+        const inputs = document.querySelectorAll('input, select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.classList.add('opacity-100');
+            });
+            input.addEventListener('blur', () => {
+                if (!input.value) {
+                    input.parentElement.classList.remove('opacity-100');
+                }
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+                header.classList.remove('border-b-2');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('border-b-2');
+            }
+        });
+    </script>
+</body></html>
