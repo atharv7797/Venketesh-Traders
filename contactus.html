@@ -1,0 +1,336 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact Us | Venketsh Traders</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Work+Sans:wght@400;500&amp;family=IBM+Plex+Sans:wght@500;600&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "primary": "#714a23",
+                    "secondary-container": "#cdddfe",
+                    "on-tertiary-fixed": "#111c2c",
+                    "surface-container-high": "#e5e9eb",
+                    "on-tertiary-container": "#e4ecff",
+                    "surface-container-highest": "#e0e3e5",
+                    "inverse-primary": "#f1bc8c",
+                    "secondary": "#4f5f7b",
+                    "primary-fixed": "#ffdcbf",
+                    "surface-tint": "#7e562e",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "background": "#f7fafc",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#384762",
+                    "tertiary-fixed-dim": "#bcc7dd",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#f1bc8c",
+                    "on-primary-container": "#ffe8d7",
+                    "secondary-fixed": "#d6e3ff",
+                    "inverse-surface": "#2d3133",
+                    "tertiary-container": "#606b7f",
+                    "surface": "#f7fafc",
+                    "on-secondary-container": "#52617d",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#ebeef0",
+                    "on-error": "#ffffff",
+                    "on-background": "#181c1e",
+                    "surface-container-low": "#f1f4f6",
+                    "primary-container": "#8c6239",
+                    "on-secondary-fixed": "#0a1c34",
+                    "on-primary-fixed-variant": "#633f19",
+                    "surface-bright": "#f7fafc",
+                    "tertiary": "#485366",
+                    "tertiary-fixed": "#d8e3fa",
+                    "surface-variant": "#e0e3e5",
+                    "on-surface-variant": "#50453b",
+                    "outline": "#82756a",
+                    "on-primary-fixed": "#2d1600",
+                    "secondary-fixed-dim": "#b7c7e7",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d7dadc",
+                    "outline-variant": "#d4c3b7",
+                    "on-surface": "#181c1e",
+                    "inverse-on-surface": "#eef1f3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "max-width": "1280px",
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Hanken Grotesk"],
+                    "body-md": ["Work Sans"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-lg": ["Work Sans"],
+                    "label-lg": ["IBM Plex Sans"],
+                    "label-sm": ["IBM Plex Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav-link {
+            border-bottom: 2px solid #714a23;
+        }
+        .form-input-shadow:focus {
+            box-shadow: 0 4px 12px rgba(113, 74, 35, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- Top Navigation Bar -->
+<header class="bg-surface sticky top-0 z-50 border-b-2 border-outline-variant shadow-sm w-full">
+<nav class="flex justify-between items-center h-16 px-gutter max-w-max-width mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Venketsh Traders Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz_mXMuL0bZ1uly9CgbCi9If1Q58y7lXJMTi1h699HKsRA7k_iSQuiDdvloFGo7w2M8FR1LaX9ZmvQXCWDfjgNuxZVLBI5953IJOy2bdMbCRRE_uivqY-gseQUSX2GrvLZLd14cq1UBbqZyTiWHQ4alOQf9YnKIYQYYFJBzho2DnVxD5M_W_jrPAU4fC90Rh5MbgMlhla3n9jK5wWV2Yjdy-CZw2xvfSh_v9rTvvkvTwEh2qsXxd7wrzbqTk0poiHpUswOh7W-ILg">
+<span class="text-headline-md font-headline-md font-bold text-primary">Venketsh Traders</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Plumbing</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Hardware</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Irrigation</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Motors</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">About Us</a>
+<a class="text-primary border-b-2 border-primary font-bold transition-colors duration-200 text-label-lg font-label-lg scale-95 active:opacity-80 transition-transform" href="#">Contact Us</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="max-w-max-width mx-auto px-gutter py-12 md:py-24">
+<!-- Hero Section -->
+<section class="mb-16">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h1 class="text-display-lg font-headline-lg text-on-surface mb-6">Get in Touch with our Experts</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl">
+                        Whether you're a professional contractor or a homeowner tackling a DIY project, our team is here to provide the technical guidance and industrial supplies you need.
+                    </p>
+<div class="mt-10 space-y-8">
+<div class="flex items-start gap-4">
+<div class="bg-primary-fixed p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div>
+<h3 class="text-label-lg font-label-lg text-primary uppercase tracking-wider">Phone Support</h3>
+<p class="text-headline-md font-headline-md text-on-surface mt-1">+91 7276807797</p>
+<p class="text-body-md font-body-md text-on-surface-variant">Mon - Sat, 9:00 AM to 7:00 PM</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary-fixed p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<h3 class="text-label-lg font-label-lg text-primary uppercase tracking-wider">Physical Address</h3>
+<p class="text-body-lg font-body-lg text-on-surface mt-1">
+                                    123 Industrial Estate Road,<br>
+                                    Technical Zone, Maharashtra, India
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Image -->
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/5 rounded-2xl -z-10 transition-transform group-hover:scale-105"></div>
+<div class="h-[400px] w-full rounded-xl overflow-hidden border border-outline-variant bg-surface-container shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A professional, clean high-angle shot of industrial plumbing supplies and brass hardware arranged neatly on a dark workbench. The lighting is crisp and professional, highlighting the metallic textures of copper pipes and industrial valves. The overall aesthetic is grounded and authoritative, using a professional corporate palette of deep bronze and metallic grays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCTeMLQ5Kq62XIEoMJMcGp3cidaL3_--uK-Sw2AMJINJ9r3HiLEn4cEUiPloei1y_ZiJvjhkYacc1sEULQi5-ByXjA0gG5vqvrrz2Ezmuim4ecUOut2boIvil0cql0RQOevQaSOxA119g109ZB9BBPZHiT7ish6dDyRCcnLb6gtCTlS9r66nT5s6JwkjgY2utLluqTn3aG4iPi6kLVspyj4JH36kPqOyPPEGGRSjsel2GQElS24lH7SCfiAGZXK8PaBO18taE-xew">
+</div>
+</div>
+</div>
+</section>
+<!-- Form and Map Bento Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Contact Form -->
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 border border-outline-variant">
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-8">Send us a Message</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface-variant">FULL NAME</label>
+<input class="w-full px-4 py-3 bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all font-body-md form-input-shadow" placeholder="John Doe" type="text">
+</div>
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface-variant">EMAIL ADDRESS</label>
+<input class="w-full px-4 py-3 bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all font-body-md form-input-shadow" placeholder="john@example.com" type="email">
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface-variant">SUBJECT</label>
+<select class="w-auto px-4 py-3 bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all font-body-md form-input-shadow">
+<option>Product Inquiry</option>
+<option>Order Status</option>
+<option>Technical Support</option>
+<option>Other</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-label-lg font-label-lg text-on-surface-variant">YOUR MESSAGE</label>
+<textarea class="w-full px-4 py-3 bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all font-body-md form-input-shadow" placeholder="Tell us about your hardware or plumbing needs..." rows="5"></textarea>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest transition-all hover:opacity-90 active:scale-95" type="submit">
+                        Submit Inquiry
+                    </button>
+</form>
+</div>
+<!-- Map Column -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="bg-surface-container-highest flex-1 relative min-h-[300px] border border-outline-variant overflow-hidden group">
+<!-- Google Map Integration Placeholder -->
+<div class="absolute inset-0 z-0 grayscale contrast-125 opacity-40">
+<div class="w-full h-full bg-cover bg-center" data-alt="A clean, minimalist topographical map style graphic showing an industrial district with highlighted main roads and simple geometric building shapes. The map uses a neutral slate and iron navy color scheme to maintain the professional industrial aesthetic." data-location="Maharashtra" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiaAypqHzUg2AAycsi6DIDhaYZ4XFH0zv-pvP-UrVBpu2NtdV-4fdcxi9PAVNu0GuUP-Pbm8W-QlFPAnZ3RgF9snu8mP54o8UMtPr5pJpq2upgRc6893YMKrccBO3RvZF_9Sx7lCc2ULpiwytC63DSDnaCCyNEKCSIGAUSwSazIecF6w8vKVtM3tS__bFR-a3gxF0ZQtAmMO0MsO-4qG6h1zlVoNB-JPl1FXi-JJBMJc8z9YKhNjPfp24VuZRZiLUnXDVGoKlCBxM')"></div>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-8 z-10 text-center">
+<div class="bg-surface/90 backdrop-blur-sm p-6 border border-outline shadow-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Our Warehouse</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">Visit us to see our full range of plumbing and irrigation solutions.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="https://maps.app.goo.gl/DnkQynGYrXQ5VGUX9" target="_blank">
+                                Open in Google Maps
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-on-surface text-surface-container-lowest p-8 border border-on-surface">
+<h3 class="text-label-lg font-label-lg text-primary-fixed-dim uppercase tracking-wider mb-4">Urgent Inquiries</h3>
+<p class="text-headline-md font-headline-md mb-2">Need a quote fast?</p>
+<p class="text-body-md font-body-md opacity-80 mb-6">Contractors and bulk buyers can reach our direct sales line for priority processing.</p>
+<div class="flex items-center gap-2 text-primary-fixed-dim font-bold">
+<span class="material-symbols-outlined">whatshot</span>
+<span>Available on WhatsApp</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick FAQ / Support Grid -->
+<section class="mt-24 border-t border-outline-variant pt-16">
+<h2 class="text-headline-lg font-headline-lg text-on-surface text-center mb-12">Support Categories</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 border border-outline-variant hover:border-primary transition-colors bg-surface-container-low group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform">construction</span>
+<h4 class="text-label-lg font-label-lg text-on-surface mb-2">TECHNICAL ADVICE</h4>
+<p class="text-body-md text-on-surface-variant">Expert guidance on pump selection and irrigation system design for agricultural or domestic use.</p>
+</div>
+<div class="p-8 border border-outline-variant hover:border-primary transition-colors bg-surface-container-low group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform">inventory_2</span>
+<h4 class="text-label-lg font-label-lg text-on-surface mb-2">STOCK CHECK</h4>
+<p class="text-body-md text-on-surface-variant">Verify availability of specific hardware SKUs or bulk plumbing supplies before your visit.</p>
+</div>
+<div class="p-8 border border-outline-variant hover:border-primary transition-colors bg-surface-container-low group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform">local_shipping</span>
+<h4 class="text-label-lg font-label-lg text-on-surface mb-2">DELIVERY RADIUS</h4>
+<p class="text-body-md text-on-surface-variant">Inquire about our transport services for heavy motors and large-scale hardware orders.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t-4 border-primary mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 px-gutter max-w-max-width mx-auto">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<img alt="Venketsh Traders Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz_mXMuL0bZ1uly9CgbCi9If1Q58y7lXJMTi1h699HKsRA7k_iSQuiDdvloFGo7w2M8FR1LaX9ZmvQXCWDfjgNuxZVLBI5953IJOy2bdMbCRRE_uivqY-gseQUSX2GrvLZLd14cq1UBbqZyTiWHQ4alOQf9YnKIYQYYFJBzho2DnVxD5M_W_jrPAU4fC90Rh5MbgMlhla3n9jK5wWV2Yjdy-CZw2xvfSh_v9rTvvkvTwEh2qsXxd7wrzbqTk0poiHpUswOh7W-ILg">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface">Venketsh Traders</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                    © 2024 Venketsh Traders. Industrial &amp; Domestic Hardware Experts.
+                </p>
+</div>
+<div class="grid grid-cols-1 gap-2">
+<h4 class="text-label-lg font-label-lg text-primary uppercase mb-2">Product Lines</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Plumbing Solutions</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Hardware Supplies</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Irrigation Systems</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Electric Motors</a>
+</div>
+<div class="space-y-4">
+<h4 class="text-label-lg font-label-lg text-primary uppercase mb-2">Contact Info</h4>
+<p class="text-on-surface-variant text-body-md">
+                    Contact: +91 7276807797<br>
+                    123 Industrial Estate Road
+                </p>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-opacity opacity-90 hover:opacity-100" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity opacity-90 hover:opacity-100" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant py-6">
+<div class="max-w-max-width mx-auto px-gutter flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+<p>Reliability. Durability. Expertise.</p>
+<div class="flex gap-6">
+<a class="hover:underline" href="#">Privacy Policy</a>
+<a class="hover:underline" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for form focus
+        const inputs = document.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').classList.add('text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label').classList.remove('text-primary');
+            });
+        });
+
+        // Form submission simulation
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'MESSAGE SENT';
+            btn.classList.replace('bg-primary', 'bg-tertiary-container');
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.replace('bg-tertiary-container', 'bg-primary');
+                e.target.reset();
+            }, 3000);
+        });
+    </script>
+</body></html>
