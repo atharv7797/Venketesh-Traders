@@ -105,25 +105,25 @@
 </head>
 <body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
-<header class="bg-surface dark:bg-inverse-surface border-b-2 border-outline-variant dark:border-outline shadow-sm dark:shadow-none full-width top-0 sticky z-50">
+<header class="bg-surface full-width top-0 sticky z-50 border-b-2 border-outline-variant shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center h-16 px-gutter max-w-max-width mx-auto">
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-4">
 <img alt="Venketsh Traders Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz_mXMuL0bZ1uly9CgbCi9If1Q58y7lXJMTi1h699HKsRA7k_iSQuiDdvloFGo7w2M8FR1LaX9ZmvQXCWDfjgNuxZVLBI5953IJOy2bdMbCRRE_uivqY-gseQUSX2GrvLZLd14cq1UBbqZyTiWHQ4alOQf9YnKIYQYYFJBzho2DnVxD5M_W_jrPAU4fC90Rh5MbgMlhla3n9jK5wWV2Yjdy-CZw2xvfSh_v9rTvvkvTwEh2qsXxd7wrzbqTk0poiHpUswOh7W-ILg">
-<span class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim">Venketsh Traders</span>
+<span class="text-headline-md font-headline-md font-bold text-primary">Venketsh Traders</span>
 </div>
-<nav class="hidden md:flex items-center space-x-8">
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Home</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Plumbing</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Hardware</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Irrigation</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-lg font-label-lg" href="#">Motors</a>
-<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim font-bold text-label-lg font-label-lg" href="#">About Us</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary border-b-2 border-primary font-bold text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="">Home</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="plumbing.html">Plumbing</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="hardware.html">Hardware</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="irrigation.html">Irrigation</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="motors.html">Motors</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="aboutus.html">About Us</a>
 </nav>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-lg text-label-lg scale-95 active:opacity-80 transition-transform">
-                Contact Us
-            </button>
+<div class="flex items-center gap-6">
+<button onclick="var txt = prompt('Find on this page:'); if(txt) { window.find(txt); }" class="material-symbols-outlined text-on-surface-variant hover:text-primary scale-95 active:opacity-80 transition-transform">search</button>
+<a href="contactus.html" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-lg text-label-lg hover:opacity-90 transition-all scale-95 active:opacity-80 inline-block text-center">Contact Us</a>
 </div>
-</header>
+</div></header>
 <main>
 <!-- Hero Section -->
 <section class="relative h-[60vh] flex items-center overflow-hidden">

@@ -129,22 +129,25 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
-<header class="full-width top-0 sticky z-50 bg-surface border-b-2 border-outline-variant shadow-sm">
-<nav class="flex justify-between items-center h-16 px-gutter max-w-max-width mx-auto">
-<div class="text-headline-md font-headline-md font-bold text-primary">Venketsh Traders</div>
-<div class="hidden md:flex items-center space-gap-6 gap-8">
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="index.html">Home</a>
-<a class="text-primary border-b-2 border-primary font-bold transition-colors duration-200" href="plumbing.html">Plumbing</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="hardware.html">Hardware</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="irrigation.html">Irrigation</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="motors.html">Motors</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="aboutus.html">About Us</a>
+<header class="bg-surface full-width top-0 sticky z-50 border-b-2 border-outline-variant shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center h-16 px-gutter max-w-max-width mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Venketsh Traders Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz_mXMuL0bZ1uly9CgbCi9If1Q58y7lXJMTi1h699HKsRA7k_iSQuiDdvloFGo7w2M8FR1LaX9ZmvQXCWDfjgNuxZVLBI5953IJOy2bdMbCRRE_uivqY-gseQUSX2GrvLZLd14cq1UBbqZyTiWHQ4alOQf9YnKIYQYYFJBzho2DnVxD5M_W_jrPAU4fC90Rh5MbgMlhla3n9jK5wWV2Yjdy-CZw2xvfSh_v9rTvvkvTwEh2qsXxd7wrzbqTk0poiHpUswOh7W-ILg">
+<span class="text-headline-md font-headline-md font-bold text-primary">Venketsh Traders</span>
 </div>
-<button class="bg-primary text-on-primary px-6 py-2 font-label-lg rounded hover:opacity-90 scale-95 active:opacity-80 transition-all">
-                Contact Us
-            </button>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary border-b-2 border-primary font-bold text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="">Home</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="plumbing.html">Plumbing</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="hardware.html">Hardware</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="irrigation.html">Irrigation</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="motors.html">Motors</a>
+<a class="text-on-surface-variant font-medium text-label-lg font-label-lg py-1 hover:text-primary transition-colors duration-200" href="aboutus.html">About Us</a>
 </nav>
-</header>
+<div class="flex items-center gap-6">
+<button onclick="var txt = prompt('Find on this page:'); if(txt) { window.find(txt); }" class="material-symbols-outlined text-on-surface-variant hover:text-primary scale-95 active:opacity-80 transition-transform">search</button>
+<a href="contactus.html" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-lg text-label-lg hover:opacity-90 transition-all scale-95 active:opacity-80 inline-block text-center">Contact Us</a>
+</div>
+</div></header>
 <main>
 <!-- Hero Section -->
 <section class="relative bg-inverse-surface py-24 overflow-hidden">
